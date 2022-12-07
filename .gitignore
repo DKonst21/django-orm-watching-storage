@@ -164,9 +164,9 @@ test.txt
 *.pyd
 *.pyo
 .vscode
-.idea
+.idea/
 Thumbs.db
 .DS_Store
-/venv
+venv/
 __pycache__
 .config
