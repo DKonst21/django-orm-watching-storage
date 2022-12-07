@@ -167,6 +167,6 @@ test.txt
 .idea
 Thumbs.db
 .DS_Store
-venv
+/venv
 __pycache__
 .config
