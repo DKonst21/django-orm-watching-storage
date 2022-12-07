@@ -166,6 +166,4 @@ cython_debug/
 .idea/
 Thumbs.db
 .DS_Store
-venv/
-__pycache__
-.config
+.config/
