@@ -160,3 +160,13 @@ cython_debug/
 #.idea/
 
 test.txt
+*.pyc
+*.pyd
+*.pyo
+.vscode
+.idea
+Thumbs.db
+.DS_Store
+venv
+__pycache__
+.config
