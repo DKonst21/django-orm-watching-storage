@@ -1,10 +1,13 @@
 import os
+from environs import Env
 from dotenv import load_dotenv
 load_dotenv()
 # dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
 # if os.path.exists(dotenv_path):
 #     load_dotenv(dotenv_path)
 
+env = Env()
+env.read_env()
 
 DATABASES = {
     'default': {
@@ -25,7 +28,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 ROOT_URLCONF = 'project.urls'
 
-ALLOWED_HOSTS = os.environ['ALLOWED_HOSTS']
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES = [
