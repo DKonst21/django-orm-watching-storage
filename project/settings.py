@@ -20,13 +20,13 @@ DATABASES = {
 
 INSTALLED_APPS = ['datacenter']
 
-DEBUG = os.environ['DEBUG']
+DEBUG = os.getenv("DEBUG", False)
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
 ROOT_URLCONF = 'project.urls'
 
-ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
+ALLOWED_HOSTS = os.getenv('localhost')
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES = [
